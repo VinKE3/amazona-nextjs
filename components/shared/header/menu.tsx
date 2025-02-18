@@ -6,7 +6,7 @@ export default function Menu() {
     <div className="flex justify-end">
       <nav className="flex gap-3 w-full">
         <Link href="/cart" className="flex items-center header-button">
-          <span className="font-bold">Hola, Inicia Sesíon</span>
+          <span className="font-bold">Hello, sign in</span>
         </Link>
 
         <Link href="/cart" className="header-button">
