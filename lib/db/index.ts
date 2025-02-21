@@ -10,6 +10,8 @@ export const connectToDatabase = async (
 
   if (!MONGODB_URI) throw new Error("MONGODB_URI is missing");
 
+  mongoose.set("strictQuery", false); // 🔹 Agrega esta línea antes de conectar
+
   cached.promise = cached.promise || mongoose.connect(MONGODB_URI);
 
   cached.conn = await cached.promise;
